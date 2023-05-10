@@ -10,8 +10,24 @@
 #기본 배열 다루기 Numpy
 import numpy as np
 
+
+
+#pip install tensorflow-directml
+#pip install keras==2.1.6
+
 #텐서플로우 가져오기
 import tensorflow as tf
+
+
+from tensorflow.python.client import device_lib
+print("tf.__version__")
+print(tf.__version__)
+print(device_lib.list_local_devices())
+print('gpu: ', tf.test.is_gpu_available())
+
+#tf.enable_eager_execution(tf.ConfigProto(log_device_placement=True))
+
+#print(tf.add([1.0, 2.0], [3.0, 4.0]))
 
 #데이터 다루기
 import pandas as pd
